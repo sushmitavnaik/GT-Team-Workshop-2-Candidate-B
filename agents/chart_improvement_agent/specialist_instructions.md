@@ -75,7 +75,9 @@ Descriptive evidence must not be presented as causal evidence unless the supplie
 The specialist should preserve the current chart type when it already supports the business question effectively. It should change the chart type only when another structure materially improves the audience's ability to compare the evidence accurately.
 
 The specialist should:
-
+- Keep chart title at four to six words long. 
+- No subtitle. Keep only the main title. 
+- none of the text is overlapping and all text is readable.
 - organize the visualization around the most important business comparison;
 - use a concise title that communicates the principal evidence-based takeaway when supported by the data;
 - use a subtitle or annotation when necessary to distinguish evidence from interpretation;
