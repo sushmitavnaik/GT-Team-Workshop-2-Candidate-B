@@ -1,19 +1,19 @@
 # Chart Improvement Specialist Agent Record
 
-- Repository / branch / commit:
-- Agent name and version:
-- Exact business question:
-- Baseline chart filename:
-- Improved chart filename:
-- Most important baseline weakness:
-- Visualization principle used:
-- How the case study was used for calibration rather than copied:
-- Most consequential change made:
-- Data-fidelity checks performed:
-- First test result:
-- Weakness or failure preserved from the first test:
-- Revision made to the specialist instructions:
-- Retest result:
-- Remaining limitation:
-- Independent judgment: Did the specialist materially improve communication of the business answer? Why or why not?
-- AI / verification note:
+- Repository / branch / commit: GT-Team-Workshop-2-Candidate-B / main / 08717a4
+- Agent name and version: Business Chart Improvement Agent / 0.1-student
+- Exact business question: What evidence can you find whether or not the "women and children first" principle applied during that time period on the Titanic?
+- Baseline chart filename: baseline_chart.png
+- Improved chart filename: improved_chart.png
+- Most important baseline weakness: The baseline chart presented the relevant survival-rate comparison, but its topic-oriented title required the audience to interpret the bars before determining the principal answer to the business question. The chart also did not explicitly distinguish the observed survival pattern from a causal conclusion.
+- Visualization principle used: The specialist applied the governing Story, Signs, Purpose, Perception, Method, and Charts framework, with particular emphasis on communicating the principal evidence-based takeaway, improving visual hierarchy, reducing unnecessary visual elements, and preserving an appropriate comparison structure.
+- How the case study was used for calibration rather than copied: The case study was treated only as an illustrative example of how visualization principles can be applied. Its case-specific titles, colors, annotations, chart types, layouts, and other design choices were not treated as rules. Candidate B required every change to be independently justified by the Titanic data, supplied business question, management audience, and governing visualization principles.
+- Most consequential change made: The specialist changed the visualization to a horizontal bar chart with the takeaway-oriented title "Women and children survived at far higher rates than adult men" and directly labeled survival rates and sample sizes. This made the principal comparison easier to identify while retaining the bar-chart method used for the original comparison.
+- Data-fidelity checks performed: The specialist reported checking displayed survival rates, sample sizes and denominators, category definitions, missing-age treatment, percentage scale, and the relationship implied by the comparison against the supplied source data. It reported adult women at 76.8% (255 of 332), children at 57.4% (66 of 115), and adult men at 17.7% (106 of 599), with 263 records with missing age excluded from the age-based groups. It also explicitly treated these results as descriptive evidence rather than proof of causation.
+- First test result: Passed. Candidate B successfully created the requested improved_chart.png artifact, returned the required structured response, accurately reported artifact_created as true, and the saved primary_response.json passed the scaffold validator.
+- Weakness or failure preserved from the first test: No scaffold validation or artifact-delivery failure was observed in the first primary test. The test output and generated chart were preserved as evidence rather than modifying the successful result.
+- Revision made to the specialist instructions: None after the first primary test. Candidate B passed the scaffold validator and successfully delivered the requested artifact on its initial test, so no failure-driven instruction revision was necessary.
+- Retest result: Not required. Candidate B passed the scaffold validator on the first primary test, successfully created and made available the requested improved_chart.png artifact, and accurately reported artifact_created as true. No corrective revision or retest was necessary.
+- Remaining limitation: The visualization provides descriptive evidence from the supplied passenger data and does not establish that the "women and children first" principle caused the observed survival differences. Passengers with missing age are excluded from the age-based comparison, and the comparison does not control for passenger class, location aboard the ship, lifeboat access, or other factors that may be associated with survival.
+- Independent judgment: Did the specialist materially improve communication of the business answer? Why or why not? Yes. Candidate B materially improved communication by making the principal survival-rate comparison immediately visible, using a takeaway-oriented title, direct labels, a simplified horizontal comparison structure, and an explicit limitation distinguishing descriptive evidence from causation. Unlike Candidate A's repeated technical failures, Candidate B also satisfied the scaffold's structured-output and artifact-delivery requirements on its first primary test.
+- AI / verification note: AI was used to execute the specialist workflow, analyze the supplied materials, and generate the improved visualization and structured response. The output was subsequently checked for actual artifact creation and tested using the scaffold validator. The primary response passed validation, the improved_chart.png artifact was confirmed to exist, and the frozen-core integrity check reported FROZEN CORE INTACT. The analytical claims and visualization remain subject to human review against the supplied source materials.
