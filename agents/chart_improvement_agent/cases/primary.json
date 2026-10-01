@@ -4,8 +4,8 @@
   "baseline_chart_file": "agents/chart_improvement_agent/assets/baseline_chart.png",
   "visualization_principles_file": "course_materials/Data_Visualization_for_Business_Decisions_Principles.pdf",
   "application_case_study_file": "course_materials/From_Pixels_to_Insights_Case_Study.pdf",
-  "intended_audience": "REPLACE WITH THE INTENDED MANAGEMENT AUDIENCE",
-  "decision_context": "REPLACE WITH HOW THE CHART WILL SUPPORT A BUSINESS DECISION OR DISCUSSION",
+  "intended_audience": "Management audience reviewing evidence from the Titanic passenger data",
+  "decision_context": "Support a management discussion about whether the observed survival outcomes provide evidence consistent with the 'women and children first' principle",
   "requested_output_filename": "improved_chart.png",
   "delivery_constraints": [
     "PNG output",

@@ -1,0 +1,144 @@
+{
+  "agent": {
+    "name": "Business Chart Improvement Agent",
+    "specialty": "evidence-preserving business visualization improvement",
+    "version": "0.1-student"
+  },
+  "business_question": "What evidence can you find whether or not the \"women and children first\" principle applied during that time period on the Titanic?",
+  "business_answer_shown": "The observed survival outcomes provide descriptive evidence consistent with a \"women and children first\" pattern: adult women had a 76.8% survival rate (255 of 332), children had a 57.4% survival rate (66 of 115), and adult men had a 17.7% survival rate (106 of 599). The comparison supports the pattern but does not establish causation.",
+  "baseline_chart_assessment": [
+    {
+      "issue": "The baseline title describes the topic rather than stating the principal evidence-based takeaway.",
+      "why_it_matters": "A management audience must interpret the bars before determining the answer to the business question. The governing framework states that the chart title should convey the point being made. Data_Visualization_for_Business…",
+      "related_principle": "Method — Title / Story — Visual Story",
+      "priority": "high"
+    },
+    {
+      "issue": "The baseline uses vertical bars even though the central task is a simple comparison among three groups.",
+      "why_it_matters": "The existing chart is accurate, but a horizontal structure makes the category labels and survival-rate comparison easier to scan while retaining a common zero baseline.",
+      "related_principle": "Charts — Right Chart and Selection",
+      "priority": "medium"
+    },
+    {
+      "issue": "The baseline does not explicitly distinguish descriptive evidence from a causal conclusion.",
+      "why_it_matters": "The observed survival differences are evidence consistent with the principle, but the supplied passenger data alone do not demonstrate that the principle caused those differences.",
+      "related_principle": "Purpose — Answer Well-Framed Analytical Questions",
+      "priority": "high"
+    },
+    {
+      "issue": "The baseline contains more visual framing and whitespace than needed to communicate the three-group comparison.",
+      "why_it_matters": "Reducing nonessential visual elements increases the signal-to-noise ratio and focuses attention on the survival-rate differences.",
+      "related_principle": "Signs — Communication / Method — Chart Junk",
+      "priority": "medium"
+    }
+  ],
+  "data_fidelity_checks": [
+    {
+      "check": "Displayed survival rates",
+      "result": "pass",
+      "notes": "Source-data verification reproduces the baseline values: adult women 76.8%, children 57.4%, and adult men 17.7%."
+    },
+    {
+      "check": "Sample sizes and denominators",
+      "result": "pass",
+      "notes": "Verified denominators are adult women n=332, children n=115, and adult men n=599."
+    },
+    {
+      "check": "Category definitions",
+      "result": "pass",
+      "notes": "Children are defined as passengers under age 16; adult women and adult men are passengers age 16 or older grouped by sex."
+    },
+    {
+      "check": "Missing-data treatment",
+      "result": "pass",
+      "notes": "263 records have missing age and are excluded from these age-based groups, leaving 1,046 passengers represented."
+    },
+    {
+      "check": "Axis scale and units",
+      "result": "pass",
+      "notes": "Survival is expressed as a percentage and the improved chart retains a 0–100% scale."
+    },
+    {
+      "check": "Implied relationship",
+      "result": "pass",
+      "notes": "Women and children have substantially higher observed survival rates than adult men. This is descriptive evidence and is not presented as proof of causation."
+    }
+  ],
+  "principles_applied": [
+    {
+      "principle": "Story — make the principal point clear",
+      "change_made": "Replaced the topic-style title with the evidence-based takeaway: \"Women and children survived at far higher rates than adult men.\"",
+      "expected_communication_benefit": "The management audience can identify the principal comparison immediately rather than reconstructing the conclusion from the bars. The framework emphasizes that a successful visual should make a clear point. Data_Visualization_for_Business…"
+    },
+    {
+      "principle": "Method — tell the story with the title",
+      "change_made": "Added a subtitle stating that the observed rates are consistent with a \"women and children first\" pattern.",
+      "expected_communication_benefit": "Connects the numerical comparison directly to the supplied business question without claiming more certainty than the data support."
+    },
+    {
+      "principle": "Signs — maintain a high signal-to-noise ratio",
+      "change_made": "Removed unnecessary framing, reduced grid prominence, retained direct percentage and sample-size labels, and avoided a legend.",
+      "expected_communication_benefit": "Reduces decoding effort and keeps attention on the three survival-rate comparisons. The framework specifically asks whether the signal-to-noise ratio is high. Data_Visualization_for_Business…"
+    },
+    {
+      "principle": "Perception — guide attention to the important comparison",
+      "change_made": "Used horizontal bars ordered from adult women to children to adult men with values printed directly beside the bars.",
+      "expected_communication_benefit": "Makes the magnitude and ordering of the survival differences immediately visible."
+    },
+    {
+      "principle": "Purpose — answer the well-framed analytical question",
+      "change_made": "Added a concise limitation stating that the chart provides descriptive evidence and does not establish causation.",
+      "expected_communication_benefit": "Preserves the distinction between the observed pattern and an unsupported causal explanation."
+    },
+    {
+      "principle": "Charts — select a chart that supports accurate comparison",
+      "change_made": "Retained the bar-chart approach because it already supports accurate comparison, while changing orientation to improve scanning.",
+      "expected_communication_benefit": "Preserves the baseline's appropriate quantitative comparison while reducing interpretation effort. The framework requires the chart type to match the judgment and business question. Data_Visualization_for_Business…"
+    }
+  ],
+  "improved_chart": {
+    "artifact_created": true,
+    "filename": "improved_chart.png[improved_chart.png](sandbox:/mnt/data/improved_chart.png)",
+    "chart_type": "Horizontal bar chart",
+    "title": "Women and children survived at far higher rates than adult men",
+    "accessibility_notes": "The chart uses direct text labels rather than requiring color interpretation or legend lookup, maintains a common 0–100% scale, provides readable category labels, and includes both percentages and sample sizes."
+  },
+  "baseline_to_improved_comparison": [
+    {
+      "dimension": "Story",
+      "baseline": "The title identifies the Titanic survival topic and the principle but leaves the viewer to derive the main finding.",
+      "improved": "The title states the principal observed finding and the subtitle connects it directly to the business question."
+    },
+    {
+      "dimension": "Signs",
+      "baseline": "Accurate labels are provided, but the visual contains more framing and grid structure than necessary.",
+      "improved": "Direct labels remain while unnecessary visual elements are reduced."
+    },
+    {
+      "dimension": "Purpose",
+      "baseline": "The comparison is relevant to the business question but does not explicitly qualify the evidence as descriptive.",
+      "improved": "The chart explicitly states that the pattern is consistent with the principle while avoiding a causal claim."
+    },
+    {
+      "dimension": "Perception",
+      "baseline": "The three vertical bars permit comparison, but the takeaway must be inferred from the overall chart.",
+      "improved": "Horizontal ordering, direct labels, and a takeaway title make the principal contrast faster to recognize."
+    },
+    {
+      "dimension": "Method",
+      "baseline": "Color, labels, and scale are generally functional, but the title and surrounding visual structure can be more focused.",
+      "improved": "The chart is simplified and the title performs the primary storytelling function."
+    },
+    {
+      "dimension": "Charts",
+      "baseline": "A bar chart is appropriate for comparing survival rates across three categories.",
+      "improved": "The bar-chart method is preserved rather than redesigned unnecessarily; orientation is changed only to improve readability."
+    }
+  ],
+  "remaining_limitations": [
+    "Passengers with missing age are excluded because the child/adult classification cannot be determined from the supplied data.",
+    "The comparison does not control for passenger class, location aboard the ship, lifeboat access, or other factors that could be associated with survival.",
+    "The observed differences are consistent with the \"women and children first\" pattern but do not by themselves establish that the principle caused the survival differences."
+  ],
+  "abstention_or_more_information_needed": []
+}
